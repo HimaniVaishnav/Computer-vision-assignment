@@ -18,7 +18,7 @@ $ pip install -r requirements.txt
 - Will get .txt file for each .jpg, structure should be as follows:  
 
 var routes = (
-  <Route name="App">
+  <Route name="YOLOV5">
     <Route name="Admin">
       <Route name="Users"/>
       <Route name="Reports"/>
