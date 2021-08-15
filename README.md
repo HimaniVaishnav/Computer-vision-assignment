@@ -1,7 +1,5 @@
 ## Computer vision assignment 
 
-## Setup guide
-
 ### (1) Install neccessary libraries
 
       
