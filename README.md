@@ -37,7 +37,7 @@ or use the following link to download dataset folder directly from google drive 
 - Run [training_and_inference.ipynb](training_and_inference.ipynb) for training and inference
 - Also can use [detect.py](detect.py) for inference, folder will be generate for all detected images [run/detect/exp/]([run/detect/exp/])
 
-      $ python path/to/detect.py --source path/to/img.jpg --weights best.pt --img 640
+      $ python path/to/detect.py --source path/to/img.jpg --weights best.pt --img 640 --conf 0.25
                              OR
       $ python detect.py --source 0  # webcam
                             file.jpg  # image 
@@ -46,7 +46,18 @@ or use the following link to download dataset folder directly from google drive 
                             path/*.jpg  # glob
                             'https://youtu.be/NUsoVlDFqZg'  # YouTube
                             'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
-                         
+                            
+- Run commands below to reproduce results on custom dataset.Use the largest --batch-size your GPU allows (in colab can use 16 batch-size).  
+
+            $ python train.py --img 640 --batch 16 --epochs 20 --data data.yaml --weights yolov5s.pt --cache  
+                                                                                          yolov5m.pt                                
+                                                                                          yolov5l.pt                                
+                                                                                          yolov5x.pt 
+                                                                                          
+                                                                                          
+## Results
+
+- ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/train/exp/val_batch2_pred.jpg)
                             
                            
 
