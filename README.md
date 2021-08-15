@@ -57,7 +57,7 @@ or use the following link to download dataset folder directly from google drive 
                                                                                           
 ## Results
 
-- ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/train/exp/val_batch2_pred.jpg)
+      ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/train/exp/val_batch2_pred.jpg)
                             
                            
 
