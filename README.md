@@ -1,21 +1,34 @@
-# YOLOV5
-# **Original Repo**
-[https://github.com/ultralytics/yolov5.git](https://github.com/ultralytics/yolov5.git)
+## Computer vision assignment 
 
-# Quick Start Examples
+[Ref](https://github.com/ultralytics/yolov5.git)
 
-## Install
+## Setup guide
 
-Python>=3.6.0 is required with all [requirements.txt](requirements.txt) installed including PyTorch>=1.7: 
+### (1) Install neccessary libraries
 
-      $ git clone https://github.com/HimaniVaishnav/YOLOV5.git  
-      $ cd yolov5  
-      $ pip install -r requirements.txt  
+      
+Run following commands to clone repository and to install necessary python packages
 
-## Data Preparation
+      git clone https://github.com/HimaniVaishnav/YOLOV5.git  
+      cd yolov5  
+      pip install -r requirements.txt  
 
-- As given data in coco format, for converting data into coco to yolo run this file [general_json2yolo.py](https://github.com/HimaniVaishnav/YOLOV5/blob/main/coco_to_yolo/general_json2yolo.py)
-- Will get .txt file for each .jpg, structure should be as follows:  
+- Python>=3.6.0
+- PyTorch>=1.7: 
+
+### (2) Prepare data to train yolo v5 model -> convert coco labels to yolo labels)
+- Run following commands to convert coco labels to yolo format.
+
+      cd yolov5/coco_to_yolo
+
+- Download data from this [link](https://evp-ml-data.s3.us-east-2.amazonaws.com/ml%20interview/openimages-personcar/trainval.tar.gz)
+
+- Edit general_json2yolo.py and replace D:/crap/Eagleview/trainval/annotations/ with the downloaded data path
+- Run following command to convert coco data to yolo
+
+      python general_json2yolo.py
+
+- example converted data format
 
       YOLOV5  
       ├── data  
@@ -28,32 +41,13 @@ Python>=3.6.0 is required with all [requirements.txt](requirements.txt) installe
       │       │   ├── val   (20% .txt file)    
       └── ...
       
-or use the following link to download dataset folder directly from google drive and paste it into [data](data) folder:
+- or use the following [link](https://drive.google.com/file/d/1NH1TQOuChONS_L4GPvX272eVOeCwvYyZ/view?usp=sharing) to get postproccessed data
 
-[https://drive.google.com/file/d/1NH1TQOuChONS_L4GPvX272eVOeCwvYyZ/view?usp=sharing](https://drive.google.com/file/d/1NH1TQOuChONS_L4GPvX272eVOeCwvYyZ/view?usp=sharing)
 
-## Training and Inference 
+### (3) Training and inferencing Yolov5 mode;l on custom data
 
-- Run [training_and_inference.ipynb](training_and_inference.ipynb) for training and inference
-- Also can use [detect.py](detect.py) for inference, folder will be generate for all detected images [run/detect/exp/]([run/detect/exp/])
-
-      $ python path/to/detect.py --source path/to/img.jpg --weights best.pt --img 640 --conf 0.25
-                             OR
-      $ python detect.py --source 0  # webcam
-                            file.jpg  # image 
-                            file.mp4  # video
-                            path/  # directory
-                            path/*.jpg  # glob
-                            'https://youtu.be/NUsoVlDFqZg'  # YouTube
-                            'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
-                            
-- Run commands below to reproduce results on custom dataset.Use the largest --batch-size your GPU allows (in colab can use 16 batch-size).  
-
-       $ python train.py --img 640 --batch 16 --epochs 20 --data data.yaml --weights yolov5s.pt --cache  
-                                                                                     yolov5m.pt                                
-                                                                                     yolov5l.pt                                
-                                                                                     yolov5x.pt 
-                                                                                          
+- Run jupyter notebook server and open [training_and_inference.ipynb](training_and_inference.ipynb) to train and run inference    
+- We are using yolov5s which is very light weight in terms of computation.                                                             
                                                                                           
 ## Results
 
@@ -83,13 +77,12 @@ or use the following link to download dataset folder directly from google drive 
      
 ### Assumptions
 
-      - Annotations should be proper and clear.
-      - In image focus should be on classes (instance to be detected) rather than other instance.
+      - Data should be clean.
+      - Annotations should be clean and accurate.
     
-### False positives
-      
-      - A false positive is an outcome where the model incorrectly predicts the positive class.
-      - In our model 
+### False positives / accuracy matrics
+     
+      - train/box_loss = 0.043275, train/obj_loss = 0.059046, train/cls_loss = 0.004394, metrics/precision = 0.72551, metrics/recall = 0.63549, metrics/mAP_0.5 = 0.67286, val/box_loss = 0.044721, val/obj_loss = 0.04888, val/cls_loss = 0.005526
       
 ### Conclusion
 
