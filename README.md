@@ -17,12 +17,15 @@ $ pip install -r requirements.txt
 - As given data in coco format, for converting data into coco to yolo run this file [general_json2yolo.py](https://github.com/HimaniVaishnav/YOLOV5/blob/main/coco_to_yolo/general_json2yolo.py)
 - Will get .txt file for each .jpg, structure should be as follows:  
 
-.
-├── ...
-├── YOLOV5                    # Test files (alternatively `spec` or `tests`)
-│   ├── benchmarks          # Load and stress tests
-│   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
-│   └── unit                # Unit tests
+YOLOV5  
+├── data  
+│   └── dataset  
+│       ├── images   
+│       │   ├── train (80% .jpg file)  
+│       │   ├── val   (20% .jpg file)  
+│       ├── labels  
+│       │   ├── train (80% .txt file)  
+│       │   ├── val   (20% .txt file)    
 └── ...
 
       
