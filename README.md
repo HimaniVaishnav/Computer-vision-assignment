@@ -50,9 +50,9 @@ or use the following link to download dataset folder directly from google drive 
 - Run commands below to reproduce results on custom dataset.Use the largest --batch-size your GPU allows (in colab can use 16 batch-size).  
 
        $ python train.py --img 640 --batch 16 --epochs 20 --data data.yaml --weights yolov5s.pt --cache  
-                                                                                          yolov5m.pt                                
-                                                                                          yolov5l.pt                                
-                                                                                          yolov5x.pt 
+                                                                                     yolov5m.pt                                
+                                                                                     yolov5l.pt                                
+                                                                                     yolov5x.pt 
                                                                                           
                                                                                           
 ## Results
@@ -64,7 +64,7 @@ or use the following link to download dataset folder directly from google drive 
 
 ### Model Name
       
-      YOLOV5
+      YOLOv5
  
 ### Links to dataset and framework
 
@@ -73,10 +73,32 @@ or use the following link to download dataset folder directly from google drive 
 ### About the model
 
       - YOLOv5 is a family of object detection architectures and models pretrained on the COCO dataset
-      - YOLOv5 an acronym for 'You only look once', is an object detection algorithm that divides images into a grid system. Each cell in the grid is responsible for detecting               objects within itself.
+      - YOLOv5 an acronym for 'You only look once', is an object detection algorithm that divides images into a grid system. Each cell in the grid is responsible for detecting      objects within itself.
       - YOLOv5 is one of the most famous object detection algorithms due to its speed and accuracy.
       
 ### Primary Analysis
+
+      - Removing irrelevant images e.g. blurr, half portion of person or class.
+      - Removing duplicate data.
+     
+### Assumptions
+
+      - Annotations should be proper and clear.
+      - In image focus should be on classes (instance to be detected) rather than other instance.
+    
+### False positives
+      
+      - A false positive is an outcome where the model incorrectly predicts the positive class.
+      - In our model 
+      
+### Conclusion
+
+      - Have used most light weigth pretrained model of YOLOv5 i.e. yolov5s after fined tuning the model on custom dataset got only 14mb weight file.
+      - Have trained on 20 epochs with 16 batch size and time taken was 43 minutes.
+      - learning rate = 0.0021958, train/box_loss = 0.043275, train/obj_loss = 0.059046, train/cls_loss = 0.004394, metrics/precision = 0.72551, metrics/recall = 0.63549, metrics/mAP_0.5 = 0.67286, val/box_loss = 0.044721, val/obj_loss = 0.04888, val/cls_loss = 0.005526
+      
+### Recommendations
+
 
       
       
