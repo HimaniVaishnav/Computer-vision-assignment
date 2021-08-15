@@ -18,7 +18,6 @@ Run following commands to clone repository and to install necessary python packa
       cd yolov5/coco_to_yolo
 
 - Download data from this [link](https://evp-ml-data.s3.us-east-2.amazonaws.com/ml%20interview/openimages-personcar/trainval.tar.gz)
-
 - Edit general_json2yolo.py and replace D:/crap/Eagleview/trainval/annotations/ with the downloaded data path
 - Run following command to convert coco data to yolo
 
