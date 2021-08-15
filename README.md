@@ -42,7 +42,9 @@ Run following commands to clone repository and to install necessary python packa
 ### (3) Training and inferencing Yolov5 mode;l on custom data
 
 - Run jupyter notebook server and open [training_and_inference.ipynb](training_and_inference.ipynb) to train and run inference    
-- We are using yolov5s which is very light weight in terms of computation.                                                             
+- We are using yolov5s which is very light weight in terms of computation.    
+- Have trained on 20 epochs with 16 batch size, which took 43 minutes.                                                         
+- Trained models physical size is only 14 MB.
                                                                                           
 ## Results
 
@@ -81,8 +83,9 @@ Run following commands to clone repository and to install necessary python packa
       
 ### Conclusion
 
-      - Have used most light weigth pretrained model of YOLOv5 i.e. yolov5s after fined tuning the model on custom dataset got only 14mb weight file.
-      - Have trained on 20 epochs with 16 batch size and time taken was 43 minutes.
+      - Have used most light weigth pretrained model of YOLOv5 and used transfer learning to train on custom dataset.
+      - Trained models physical size is only 14 MB.
+      - Have trained on 20 epochs with 16 batch size, which took 43 minutes.
       - lightweight model is used, which helps to reduce gpu usage while deployment.
       - model is perfroming well even on the person and car occlusions.
       
@@ -97,18 +100,3 @@ Run following commands to clone repository and to install necessary python packa
   ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000180.jpg)
       
       
-      
-
-
-      
-      
-      
-                            
-                           
-
-
-
-      
-
-
-
