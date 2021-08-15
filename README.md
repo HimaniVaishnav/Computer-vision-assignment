@@ -49,7 +49,7 @@ or use the following link to download dataset folder directly from google drive 
                             
 - Run commands below to reproduce results on custom dataset.Use the largest --batch-size your GPU allows (in colab can use 16 batch-size).  
 
-            $ python train.py --img 640 --batch 16 --epochs 20 --data data.yaml --weights yolov5s.pt --cache  
+       $ python train.py --img 640 --batch 16 --epochs 20 --data data.yaml --weights yolov5s.pt --cache  
                                                                                           yolov5m.pt                                
                                                                                           yolov5l.pt                                
                                                                                           yolov5x.pt 
@@ -58,6 +58,21 @@ or use the following link to download dataset folder directly from google drive 
 ## Results
 
 ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/train/exp/val_batch2_pred.jpg)
+
+
+## About the model
+
+### Model Name
+      
+      YOLOV5
+ 
+### Links to dataset and framework
+
+      https://evp-ml-data.s3.us-east-2.amazonaws.com/ml interview/openimages-personcar/trainval.tar.gz 
+     
+### About the model
+      
+      
                             
                            
 
