@@ -1,7 +1,5 @@
 ## Computer vision assignment 
 
-[Ref](https://github.com/ultralytics/yolov5.git)
-
 ## Setup guide
 
 ### (1) Install neccessary libraries
@@ -88,9 +86,21 @@ Run following commands to clone repository and to install necessary python packa
 
       - Have used most light weigth pretrained model of YOLOv5 i.e. yolov5s after fined tuning the model on custom dataset got only 14mb weight file.
       - Have trained on 20 epochs with 16 batch size and time taken was 43 minutes.
-      - learning rate = 0.0021958, train/box_loss = 0.043275, train/obj_loss = 0.059046, train/cls_loss = 0.004394, metrics/precision = 0.72551, metrics/recall = 0.63549, metrics/mAP_0.5 = 0.67286, val/box_loss = 0.044721, val/obj_loss = 0.04888, val/cls_loss = 0.005526
+      - lightweight model is used, which helps to reduce gpu usage while deployment.
+      - model is perfroming well even on the person and car occlusions.
       
-### Recommendations
+      
+### Inference images [link](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp)      
+  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000113.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000144.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000149.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000216.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000221.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000365.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000180.jpg)
+      
+      
+      
 
 
       
