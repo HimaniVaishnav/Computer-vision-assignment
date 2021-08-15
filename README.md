@@ -5,8 +5,8 @@
       
 Run following commands to clone repository and to install necessary python packages
 
-      git clone https://github.com/HimaniVaishnav/YOLOV5.git  
-      cd yolov5  
+      git clone https://github.com/HimaniVaishnav/Computer-vision-assignment.git  
+      cd Computer-vision-assignment  
       pip install -r requirements.txt  
 
 - Python>=3.6.0
@@ -15,7 +15,7 @@ Run following commands to clone repository and to install necessary python packa
 ### (2) Prepare data to train yolo v5 model -> convert coco labels to yolo labels)
 - Run following commands to convert coco labels to yolo format.
 
-      cd yolov5/coco_to_yolo
+      cd Computer-vision-assignment/coco_to_yolo
 
 - Download data from this [link](https://evp-ml-data.s3.us-east-2.amazonaws.com/ml%20interview/openimages-personcar/trainval.tar.gz)
 - Edit general_json2yolo.py and replace D:/crap/Eagleview/trainval/annotations/ with the downloaded data path
@@ -25,7 +25,7 @@ Run following commands to clone repository and to install necessary python packa
 
 - example converted data format
 
-      YOLOV5  
+      Computer-vision-assignment  
       ├── data  
       │   └── dataset  
       │       ├── images   
@@ -48,7 +48,7 @@ Run following commands to clone repository and to install necessary python packa
                                                                                           
 ## Results
 
-![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/train/exp/val_batch2_pred.jpg)
+![alt tag](https://github.com/HimaniVaishnav/Computer-vision-assignment/blob/main/runs/train/exp/val_batch2_pred.jpg)
 
 
 ## About the model
@@ -90,13 +90,13 @@ Run following commands to clone repository and to install necessary python packa
       - model is perfroming well even on the person and car occlusions.
       
       
-### Inference images [link](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp)      
-  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000113.jpg)
-  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000144.jpg)
-  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000149.jpg)
-  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000216.jpg)
-  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000221.jpg)
-  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000365.jpg)
-  ![alt tag](https://github.com/HimaniVaishnav/YOLOV5/blob/main/runs/detect/exp/image_000000180.jpg)
+### Inference images [link](https://github.com/HimaniVaishnav/Computer-vision-assignment/blob/main/runs/detect/exp)      
+  ![alt tag](https://github.com/HimaniVaishnav/Computer-vision-assignment/blob/main/runs/detect/exp/image_000000113.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/Computer-vision-assignment/blob/main/runs/detect/exp/image_000000144.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/Computer-vision-assignment/blob/main/runs/detect/exp/image_000000149.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/Computer-vision-assignment/blob/main/runs/detect/exp/image_000000216.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/Computer-vision-assignment/blob/main/runs/detect/exp/image_000000221.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/Computer-vision-assignment/blob/main/runs/detect/exp/image_000000365.jpg)
+  ![alt tag](https://github.com/HimaniVaishnav/Computer-vision-assignment/blob/main/runs/detect/exp/image_000000180.jpg)
       
       
