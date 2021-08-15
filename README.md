@@ -32,6 +32,25 @@ or use the following link to download dataset folder directly from google drive 
 
 [https://drive.google.com/file/d/1NH1TQOuChONS_L4GPvX272eVOeCwvYyZ/view?usp=sharing](https://drive.google.com/file/d/1NH1TQOuChONS_L4GPvX272eVOeCwvYyZ/view?usp=sharing)
 
+## Training and Inference 
+
+- Run [training_and_inference.ipynb](training_and_inference.ipynb) for training and inference
+- Also use [detect.py](detect.py) for inference, folder will be generate for all detected images [run/detect/exp/]([run/detect/exp/])
+
+      $ python path/to/detect.py --source path/to/img.jpg --weights best.pt --img 640
+                             OR
+      $ python detect.py --source 0  # webcam
+                            file.jpg  # image 
+                            file.mp4  # video
+                            path/  # directory
+                            path/*.jpg  # glob
+                            'https://youtu.be/NUsoVlDFqZg'  # YouTube
+                            'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
+                         
+                            
+                           
+
+
 
       
 
