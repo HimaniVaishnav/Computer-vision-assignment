@@ -71,6 +71,14 @@ or use the following link to download dataset folder directly from google drive 
       https://evp-ml-data.s3.us-east-2.amazonaws.com/ml interview/openimages-personcar/trainval.tar.gz 
      
 ### About the model
+
+      - YOLOv5 is a family of object detection architectures and models pretrained on the COCO dataset
+      - YOLOv5 an acronym for 'You only look once', is an object detection algorithm that divides images into a grid system. Each cell in the grid is responsible for detecting               objects within itself.
+      - YOLOv5 is one of the most famous object detection algorithms due to its speed and accuracy.
+      
+### Primary Analysis
+
+      
       
       
                             
