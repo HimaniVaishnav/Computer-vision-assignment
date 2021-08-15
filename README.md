@@ -5,7 +5,7 @@
 # Quick Start Examples
 
 ## Install
-Python>=3.6.0 is required with all [requirements.txt](requirements.txt) installed including PyTorch>=1.7:
+Python>=3.6.0 is required with all [requirements.txt](requirements.txt) installed including PyTorch>=1.7:  
 $ git clone https://github.com/HimaniVaishnav/YOLOV5.git  
 $ cd yolov5  
 $ pip install -r requirements.txt  
